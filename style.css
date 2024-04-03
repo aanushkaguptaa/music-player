@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia+Sans:wght@200&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia+Sans:wght@200&family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+:root{
+	--bgcolour: #31412d;
+    --navbgcolor: #26322c;
+    --navfontcolor: white;
+    --playercolour: #312818;
+    --playericoncolor: white;
+    --containerbg: white;
+    --containercontent: rgb(255, 255, 255);
+    --songitembg: rgb(99, 103, 81, 0.7);
+    --songitem: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: var(--bgcolour);
+}
+nav{
+	font-family: 'Varela Round', sans-serif;
+}
+nav ul{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	height: 65px;
+	background-color: var(--navbgcolor);
+	color: var(--navfontcolor);
+}
+nav ul li{
+	padding: 0 12px;
+	cursor: pointer;
+}
+nav ul li a{
+    color: var(--navfontcolor);
+    text-decoration: none;
+}
+.brand{
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+.brand img{
+	width: 48px;
+	padding: 0 8px;
+}
+.container{
+	display: flex;
+	min-height: 63vh;
+	background-color: var(--containerbg);
+	color: var(--containercontent);
+	font-family: 'Montserrat', sans-serif;
+	width: 80%;
+	margin: 23px auto;
+	border-radius: 12px;
+	padding: 34px;
+	background-image: url("images/backgroundimage.jpg");
+}
+.songitem{
+	height: 50px;
+	display: flex;
+	background-color: var(--songitembg);
+	color: var(--songitem);
+	/* width: 600px; */
+	margin: 12px 0;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 34px;
+	font-size: small;
+	/* opacity: 70%; */
+}
+.songitem img{
+	width: 43px;
+	margin: 0 20px;
+	border-radius: 34px;
+}
+.timestamp{
+	margin: 0 23px;
+}
+.timestamp i{
+	cursor: pointer;
+}
+.bottom{
+	display: flex;
+	position: sticky;
+	height: 120px;
+	background-color: var(--playercolour);
+	color: var(--playericoncolor);
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.icons{
+	margin-top: 20px;
+}
+.icons i{
+	cursor: pointer;
+	padding-left: 20px;
+}
+#progressbar{
+	width: 60vw;
+	text-align: center;
+	cursor: pointer;
+}
+.songinfo{
+	position: absolute;
+	left: 19.5vw;
+	font-family: 'Montserrat', sans-serif;
+}
+/* .songinfo img{
+	opacity: 0;
+	transition: opacity 1s ease-in;
+} */
